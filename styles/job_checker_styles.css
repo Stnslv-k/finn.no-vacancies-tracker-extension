@@ -1,0 +1,10 @@
+.applied_vacansion::after{
+    content: 'Applied \01F3AF';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: block;
+    border-radius: 5px;
+    padding: 2px 2px 2px 4px;
+    background-color: #7fffd4;
+}

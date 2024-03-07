@@ -1,0 +1,28 @@
+{
+    "name": "FINN.NO -> applied job checker",
+    "description": "Extension help to control appling job process",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {},
+    "action": {
+        "default_popup": "job_checker.html",
+        "default_icon": "job_checker_ext.png"
+      },
+    "permissions": [
+        "storage"
+      ],
+    "background":{
+    },
+    "content_scripts": [
+        {
+          "js": [
+            
+            "scripts/job_checker_script.js"
+            ],
+          "css": ["styles/job_checker_styles.css"],
+          "matches": [
+            "https://www.finn.no/job/*"
+          ]
+        }
+      ]
+}
